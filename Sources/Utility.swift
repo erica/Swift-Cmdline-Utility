@@ -2,6 +2,6 @@
 
 import Foundation
 
-/// A namespace for general utility functionality not related specifically to the semantics of this app.
+/// A `Utility` namespace for hosting utility functionality
 public enum Utility {}
 

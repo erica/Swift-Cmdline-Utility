@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0BF3622493061D00EEE9C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05392492A49600C11AE1 /* main.swift */; };
-		8E312F1524930E8200734C68 /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05412492A4DC00C11AE1 /* StringUtility.swift */; };
-		8E312F1624930E8200734C68 /* Peekable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05422492A4DC00C11AE1 /* Peekable.swift */; };
-		8E312F1724930E8200734C68 /* Result+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05432492A4DC00C11AE1 /* Result+Utility.swift */; };
-		8E312F1824930E8200734C68 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05442492A4DC00C11AE1 /* Utility.swift */; };
-		8E312F1924930E8200734C68 /* Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05452492A4DC00C11AE1 /* Execute.swift */; };
-		8E312F1A24930E8200734C68 /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05462492A4DC00C11AE1 /* RuntimeError.swift */; };
-		8E312F1B24930E8200734C68 /* KeyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D054D2492A4F400C11AE1 /* KeyEntry.swift */; };
+		8E0DB1C02495662C0094972A /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1B6249563C60094972A /* StringUtility.swift */; };
+		8E0DB1C12495662C0094972A /* KeyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1B7249563C60094972A /* KeyEntry.swift */; };
+		8E0DB1C22495662C0094972A /* Result+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1B8249563C60094972A /* Result+Utility.swift */; };
+		8E0DB1C32495662C0094972A /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1B9249563C60094972A /* OutputStream.swift */; };
+		8E0DB1C42495662C0094972A /* TransformativeOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1B5249563C60094972A /* TransformativeOutputStream.swift */; };
+		8E0DB1C52495662C0094972A /* TransformativeOutputStream+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1BE249564CF0094972A /* TransformativeOutputStream+Examples.swift */; };
+		8E0DB1C62495662C0094972A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1BA249563C60094972A /* Utility.swift */; };
+		8E0DB1C72495662C0094972A /* Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1BB249563C60094972A /* Execute.swift */; };
+		8E0DB1C82495662C0094972A /* Applicative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1BC249563C60094972A /* Applicative.swift */; };
+		8E0DB1C92495662C0094972A /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1BD249563C60094972A /* RuntimeError.swift */; };
+		8E0DB1CA249566340094972A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05392492A49600C11AE1 /* main.swift */; };
+		8E0DB1CC24956CD60094972A /* SynchronousData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1CB24956CD60094972A /* SynchronousData.swift */; };
 		8E312F342493189500734C68 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E312F332493189500734C68 /* libncurses.tbd */; };
 /* End PBXBuildFile section */
 
@@ -31,16 +35,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E0DB1B5249563C60094972A /* TransformativeOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformativeOutputStream.swift; sourceTree = "<group>"; };
+		8E0DB1B6249563C60094972A /* StringUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtility.swift; sourceTree = "<group>"; };
+		8E0DB1B7249563C60094972A /* KeyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEntry.swift; sourceTree = "<group>"; };
+		8E0DB1B8249563C60094972A /* Result+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Utility.swift"; sourceTree = "<group>"; };
+		8E0DB1B9249563C60094972A /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
+		8E0DB1BA249563C60094972A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		8E0DB1BB249563C60094972A /* Execute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Execute.swift; sourceTree = "<group>"; };
+		8E0DB1BC249563C60094972A /* Applicative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicative.swift; sourceTree = "<group>"; };
+		8E0DB1BD249563C60094972A /* RuntimeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeError.swift; sourceTree = "<group>"; };
+		8E0DB1BE249564CF0094972A /* TransformativeOutputStream+Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformativeOutputStream+Examples.swift"; sourceTree = "<group>"; };
+		8E0DB1CB24956CD60094972A /* SynchronousData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousData.swift; sourceTree = "<group>"; };
 		8E312F332493189500734C68 /* libncurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.tbd; path = usr/lib/libncurses.tbd; sourceTree = SDKROOT; };
 		8E3D05362492A49600C11AE1 /* Swift-Cmdline-Utility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift-Cmdline-Utility"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3D05392492A49600C11AE1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		8E3D05412492A4DC00C11AE1 /* StringUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringUtility.swift; path = Sources/StringUtility.swift; sourceTree = SOURCE_ROOT; };
-		8E3D05422492A4DC00C11AE1 /* Peekable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Peekable.swift; path = Sources/Peekable.swift; sourceTree = SOURCE_ROOT; };
-		8E3D05432492A4DC00C11AE1 /* Result+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Result+Utility.swift"; path = "Sources/Result+Utility.swift"; sourceTree = SOURCE_ROOT; };
-		8E3D05442492A4DC00C11AE1 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/Utility.swift; sourceTree = SOURCE_ROOT; };
-		8E3D05452492A4DC00C11AE1 /* Execute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Execute.swift; path = Sources/Execute.swift; sourceTree = SOURCE_ROOT; };
-		8E3D05462492A4DC00C11AE1 /* RuntimeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RuntimeError.swift; path = Sources/RuntimeError.swift; sourceTree = SOURCE_ROOT; };
-		8E3D054D2492A4F400C11AE1 /* KeyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyEntry.swift; path = Sources/KeyEntry.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0DB1B4249563C60094972A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DB1B6249563C60094972A /* StringUtility.swift */,
+				8E0DB1B7249563C60094972A /* KeyEntry.swift */,
+				8E0DB1B8249563C60094972A /* Result+Utility.swift */,
+				8E0DB1B9249563C60094972A /* OutputStream.swift */,
+				8E0DB1B5249563C60094972A /* TransformativeOutputStream.swift */,
+				8E0DB1BE249564CF0094972A /* TransformativeOutputStream+Examples.swift */,
+				8E0DB1BA249563C60094972A /* Utility.swift */,
+				8E0DB1CB24956CD60094972A /* SynchronousData.swift */,
+				8E0DB1BB249563C60094972A /* Execute.swift */,
+				8E0DB1BC249563C60094972A /* Applicative.swift */,
+				8E0DB1BD249563C60094972A /* RuntimeError.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
 		8E312F322493189500734C68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,24 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				8E3D05392492A49600C11AE1 /* main.swift */,
-				8E3D05402492A4DC00C11AE1 /* Utility */,
+				8E0DB1B4249563C60094972A /* Sources */,
 			);
 			path = "Swift-Cmdline-Utility";
 			sourceTree = "<group>";
-		};
-		8E3D05402492A4DC00C11AE1 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				8E3D05412492A4DC00C11AE1 /* StringUtility.swift */,
-				8E3D05422492A4DC00C11AE1 /* Peekable.swift */,
-				8E3D05432492A4DC00C11AE1 /* Result+Utility.swift */,
-				8E3D05442492A4DC00C11AE1 /* Utility.swift */,
-				8E3D05452492A4DC00C11AE1 /* Execute.swift */,
-				8E3D05462492A4DC00C11AE1 /* RuntimeError.swift */,
-				8E3D054D2492A4F400C11AE1 /* KeyEntry.swift */,
-			);
-			path = Utility;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -161,14 +173,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E312F1524930E8200734C68 /* StringUtility.swift in Sources */,
-				8E312F1624930E8200734C68 /* Peekable.swift in Sources */,
-				8E312F1724930E8200734C68 /* Result+Utility.swift in Sources */,
-				8E312F1824930E8200734C68 /* Utility.swift in Sources */,
-				8E312F1924930E8200734C68 /* Execute.swift in Sources */,
-				8E312F1A24930E8200734C68 /* RuntimeError.swift in Sources */,
-				8E312F1B24930E8200734C68 /* KeyEntry.swift in Sources */,
-				8E0BF3622493061D00EEE9C7 /* main.swift in Sources */,
+				8E0DB1CA249566340094972A /* main.swift in Sources */,
+				8E0DB1C02495662C0094972A /* StringUtility.swift in Sources */,
+				8E0DB1C12495662C0094972A /* KeyEntry.swift in Sources */,
+				8E0DB1CC24956CD60094972A /* SynchronousData.swift in Sources */,
+				8E0DB1C22495662C0094972A /* Result+Utility.swift in Sources */,
+				8E0DB1C32495662C0094972A /* OutputStream.swift in Sources */,
+				8E0DB1C42495662C0094972A /* TransformativeOutputStream.swift in Sources */,
+				8E0DB1C52495662C0094972A /* TransformativeOutputStream+Examples.swift in Sources */,
+				8E0DB1C62495662C0094972A /* Utility.swift in Sources */,
+				8E0DB1C72495662C0094972A /* Execute.swift in Sources */,
+				8E0DB1C82495662C0094972A /* Applicative.swift in Sources */,
+				8E0DB1C92495662C0094972A /* RuntimeError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
