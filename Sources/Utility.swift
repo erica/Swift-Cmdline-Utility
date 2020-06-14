@@ -4,4 +4,3 @@ import Foundation
 
 /// A `Utility` namespace for hosting utility functionality
 public enum Utility {}
-

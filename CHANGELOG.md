@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.3
+
+* Adds Utility SideEffect
+
 ## 0.0.2
 
 * Add OutputStream and examples

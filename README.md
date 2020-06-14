@@ -30,6 +30,10 @@ Initializes a `Result` from a completion handler's `(data?, error?)`.
 
 A stringity error type representing runtime errors.
 
+### Side effect utility
+
+Enables debugging within method chains and condition cascades.
+
 ### StringUtility
 
 `String` utilities.

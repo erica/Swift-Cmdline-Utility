@@ -3,6 +3,9 @@
 import Foundation
 
 public extension TransformativeOutputStream {
+    /// Passthrough
+    static let passthrough = TransformativeOutputStream({ $0 })
+    
     /// Ascii transformation
     static var ascii = TransformativeOutputStream({ string in
         let items = string.unicodeScalars.map({ char in
@@ -11,23 +14,43 @@ public extension TransformativeOutputStream {
         return items.joined()
     })
     
+    /// Constructs an instance that translates to another language
+    ///
+    /// Example:
+    ///
+    /// ```
+    /// var german = TransformativeOutputStream.translating(to: "de")
+    /// print("\"I am a jelly donut.\"", to: &german)
+    /// ```
+    /// - Parameter countryCode: a 2-character country code suitable for communicating with Google
+    /// - Returns: A translated string or the original when translation fails
+    static func translating(to countryCode: String) -> Self {
+        guard !countryCode.isEmpty
+            else { return TransformativeOutputStream.passthrough }
+        return TransformativeOutputStream({ string in
+            if let translated = Translate.translate(string, to: countryCode) {
+                return translated
+            }
+            return string
+        })
+    }
+    
     /// Italian translation
-    static var italian = TransformativeOutputStream({ string in
-        if let translated = Translate.translate(string, to: "it") {
-            return translated
-        }
-        return string
-    })
+    static var italian = Self.translating(to: "it")
 }
 
-enum Translate {
+public enum Translate {
     /// Translates a string from English to a destination language
-    /// - Caution: Bring your own implementation. Do not use this one.
-    fileprivate static func translate(_ string: String, from sourceLanguage: String = "en", to language: String) -> String?
+    ///
+    /// - Caution: Bring your own implementation. Do not use this one. This one is bad.
+    public static func translate(_ string: String, from sourceLanguage: String = "en", to language: String) -> String?
     {
+        let replacement = "__"
+        let noquotes = string.replacingOccurrences(of: "\"", with: replacement)
+
         guard
-            !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
-            let escaped = string.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+            !noquotes.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+            let escaped = noquotes.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
             else  { return nil }
         
         // Caution. For sample use only. Do not use in production code or for any purpose
@@ -52,6 +75,6 @@ enum Translate {
         // ```
         let components = String(rawstring.dropFirst(4))
             .components(separatedBy: CharacterSet(charactersIn: "\""))
-        return components[0]
+        return components[0].replacingOccurrences(of: replacement, with: "\"")
     }
 }

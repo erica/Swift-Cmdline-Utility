@@ -9,8 +9,9 @@ extension Applicative {
     /// Applies the closure and passes through the instance
     /// - Parameter closure: a side effect to apply to the current instance.
     /// - Returns: the receiving instance
-    public func applying(_ closure: (_ instance: Self) -> ()) -> Self {
+    public func applying(_ closure: (_ instance: Self) -> Void) -> Self {
         closure(self)
         return self
     }
 }
+
