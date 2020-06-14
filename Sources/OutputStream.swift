@@ -18,6 +18,7 @@ public class OutputStream: TextOutputStream {
     /// Wraps a file path to convorm to `TextOutputStream`
     public init?(filePath: String, append: Bool = false) {
         #if canImport(Darwin)
+        // Cocoa platforms only. No Linux
         let filePath = (filePath as NSString).expandingTildeInPath
         #endif
         fflush(Foundation.stdout)
