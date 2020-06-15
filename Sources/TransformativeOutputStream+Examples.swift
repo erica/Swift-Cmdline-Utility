@@ -1,6 +1,7 @@
 //  Copyright © 2020 Erica Sadun. All rights reserved.
 
 import Foundation
+import GeneralUtility
 
 public extension TransformativeOutputStream {
     /// Passthrough
@@ -47,7 +48,7 @@ public enum Translate {
     {
         let replacement = "__"
         let noquotes = string.replacingOccurrences(of: "\"", with: replacement)
-
+        
         guard
             !noquotes.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
             let escaped = noquotes.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)

@@ -1,6 +1,7 @@
 //  Copyright © 2020 Erica Sadun. All rights reserved.
 
 import Foundation
+import GeneralUtility
 
 /// A wrapper to convert an `UnsafeMutablePointer<FILE>` to a `TextOutputStream`
 ///
@@ -17,10 +18,7 @@ public class OutputStream: TextOutputStream {
     
     /// Wraps a file path to convorm to `TextOutputStream`
     public init?(filePath: String, append: Bool = false) {
-        #if canImport(Darwin)
-        // Cocoa platforms only. No Linux
         let filePath = (filePath as NSString).expandingTildeInPath
-        #endif
         fflush(Foundation.stdout)
         self.filePath = filePath
         outputStream = append ? fopen(filePath, "a") : fopen(filePath, "w")

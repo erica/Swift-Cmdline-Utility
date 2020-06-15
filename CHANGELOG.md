@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.6
+
+Moved general utility out to https://github.com/erica/Swift-General-Utility and created a dependency to that package
+
 ## 0.0.3
 
 * Adds Utility SideEffect

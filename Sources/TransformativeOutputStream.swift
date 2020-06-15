@@ -13,7 +13,7 @@ public struct TransformativeOutputStream: TextOutputStream {
     public func write(_ string: String) {
         print(transformationClosure(string))
     }
-
+    
     /// A transforming closure
     private let transformationClosure: (String) -> String
 }

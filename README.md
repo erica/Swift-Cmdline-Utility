@@ -4,49 +4,38 @@ Support code for developing command line utilities.
 
 ## Contents
 
-### Applicative
-
-Inline functional `Applicative` protocol that supports applying a closure to an instance, returning the instance. 
-
-*Note:* Types must conform to the protocol to inherit the behavior, as non-nominal types like `Any` cannot be extended.
-
-### Execute
-
-Run a system command with `Process` and return the contents of stdout or throw stderr for non-zero status. Although you may call this with either a single string or (cmd-path, argument-array), the latter approach is preferred.
-
 ### Key Entry
 
 Raw mode key-press detection
 
-### OutputStream
+### Output Stream
 
 A wrapper to convert an `UnsafeMutablePointer<FILE>` to a `TextOutputStream`
 
-### Result utility
+### Transformative Output Stream
 
-Initializes a `Result` from a completion handler's `(data?, error?)`.
-
-### RuntimeError
-
-A stringity error type representing runtime errors.
-
-### Side effect utility
-
-Enables debugging within method chains and condition cascades.
-
-### StringUtility
-
-`String` utilities.
-
-### SynchronousData
-
-Request synchronous data using `URLSession`.
-
-### Utility
-
-A `Utility` namespace for hosting utility functionality withing your app.
+`TextOutputStream`s that apply a closure to transform their contents before printing.
 
 ## Installation
 
-* PROJECT > Swift Packages > Install `https://github.com/erica/Swift-Cmdline-Utility`
-* .Package(url: "https://github.com/erica/Swift-Cmdline-Utility.git", branch: "master")
+PROJECT > Swift Packages > Install:
+
+```
+https://github.com/erica/https://github.com/erica/Swift-Cmdline-Utility
+```
+
+SwiftPM:
+
+```
+dependencies: [
+    .package(url: "https://github.com/erica/Swift-Cmdline-Utility", from: "0.0.1"),
+],
+targets: [
+    .target(
+        name: "TARGET-NAME",
+        dependencies: [
+           .product(name: "CmdlineUtility"),
+        ],
+    ),
+],
+```
