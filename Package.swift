@@ -14,16 +14,21 @@ let package = Package(
             targets: ["CmdlineUtility"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/erica/Swift-General-Utility", from: "0.0.1"),
+        .package(url: "https://github.com/erica/Swift-General-Utility", from: "0.0.3"),
+        .package(url: "https://github.com/erica/Swift-Mac-Utility", from: "0.0.1"),
     ],
     targets: [
         .target(
             name: "CmdlineUtility",
             dependencies: [
                 .product(name: "GeneralUtility"),
+                .product(name: "MacUtility")
             ],
             path: "Sources/"
         ),
+        .testTarget(
+            name: "Tests",
+            dependencies: ["CmdlineUtility"])
     ],
     swiftLanguageVersions: [
       .v5

@@ -11,9 +11,8 @@
 		8E0DB1C32495662C0094972A /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DB1B9249563C60094972A /* OutputStream.swift */; };
 		8E0DB1CA249566340094972A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D05392492A49600C11AE1 /* main.swift */; };
 		8E312F342493189500734C68 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E312F332493189500734C68 /* libncurses.tbd */; };
-		8E8CDD822497F7FA00EF9E7B /* TransformativeOutputStream+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8CDD812497F7FA00EF9E7B /* TransformativeOutputStream+Examples.swift */; };
+		8E62D34624AB8D1F003F5864 /* MacUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 8E62D34524AB8D1F003F5864 /* MacUtility */; };
 		8E8CDD842497F80800EF9E7B /* TransformativeOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8CDD832497F80800EF9E7B /* TransformativeOutputStream.swift */; };
-		8E8CDD872497F8EC00EF9E7B /* GeneralUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 8E8CDD862497F8EC00EF9E7B /* GeneralUtility */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +33,6 @@
 		8E312F332493189500734C68 /* libncurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.tbd; path = usr/lib/libncurses.tbd; sourceTree = SDKROOT; };
 		8E3D05362492A49600C11AE1 /* Swift-Cmdline-Utility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift-Cmdline-Utility"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3D05392492A49600C11AE1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		8E8CDD812497F7FA00EF9E7B /* TransformativeOutputStream+Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformativeOutputStream+Examples.swift"; sourceTree = "<group>"; };
 		8E8CDD832497F80800EF9E7B /* TransformativeOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformativeOutputStream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8CDD872497F8EC00EF9E7B /* GeneralUtility in Frameworks */,
+				8E62D34624AB8D1F003F5864 /* MacUtility in Frameworks */,
 				8E312F342493189500734C68 /* libncurses.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +55,6 @@
 				8E0DB1B7249563C60094972A /* KeyEntry.swift */,
 				8E0DB1B9249563C60094972A /* OutputStream.swift */,
 				8E8CDD832497F80800EF9E7B /* TransformativeOutputStream.swift */,
-				8E8CDD812497F7FA00EF9E7B /* TransformativeOutputStream+Examples.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -113,7 +110,7 @@
 			);
 			name = "Swift-Cmdline-Utility";
 			packageProductDependencies = (
-				8E8CDD862497F8EC00EF9E7B /* GeneralUtility */,
+				8E62D34524AB8D1F003F5864 /* MacUtility */,
 			);
 			productName = "Swift-Cmdline-Utility";
 			productReference = 8E3D05362492A49600C11AE1 /* Swift-Cmdline-Utility */;
@@ -126,7 +123,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Erica Sadun";
 				TargetAttributes = {
 					8E3D05352492A49600C11AE1 = {
@@ -144,7 +141,7 @@
 			);
 			mainGroup = 8E3D052D2492A49600C11AE1;
 			packageReferences = (
-				8E8CDD852497F8EC00EF9E7B /* XCRemoteSwiftPackageReference "Swift-General-Utility" */,
+				8E62D34424AB8D1F003F5864 /* XCRemoteSwiftPackageReference "Swift-Mac-Utility" */,
 			);
 			productRefGroup = 8E3D05372492A49600C11AE1 /* Products */;
 			projectDirPath = "";
@@ -160,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8CDD822497F7FA00EF9E7B /* TransformativeOutputStream+Examples.swift in Sources */,
 				8E8CDD842497F80800EF9E7B /* TransformativeOutputStream.swift in Sources */,
 				8E0DB1CA249566340094972A /* main.swift in Sources */,
 				8E0DB1C12495662C0094972A /* KeyEntry.swift in Sources */,
@@ -197,6 +193,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -257,6 +254,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -287,6 +285,7 @@
 		8E3D053E2492A49600C11AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2W4DVPEQ39;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -298,6 +297,7 @@
 		8E3D053F2492A49600C11AE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2W4DVPEQ39;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -330,9 +330,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8E8CDD852497F8EC00EF9E7B /* XCRemoteSwiftPackageReference "Swift-General-Utility" */ = {
+		8E62D34424AB8D1F003F5864 /* XCRemoteSwiftPackageReference "Swift-Mac-Utility" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/erica/Swift-General-Utility.git";
+			repositoryURL = "https://github.com/erica/Swift-Mac-Utility.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.0.1;
@@ -341,10 +341,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8E8CDD862497F8EC00EF9E7B /* GeneralUtility */ = {
+		8E62D34524AB8D1F003F5864 /* MacUtility */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E8CDD852497F8EC00EF9E7B /* XCRemoteSwiftPackageReference "Swift-General-Utility" */;
-			productName = GeneralUtility;
+			package = 8E62D34424AB8D1F003F5864 /* XCRemoteSwiftPackageReference "Swift-Mac-Utility" */;
+			productName = MacUtility;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

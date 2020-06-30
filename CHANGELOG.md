@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.0.7
+Moved transformative examples out of code to examples folder
+Added dependency for Swift-Mac-Utility/MacUtility
+Added tests skeleton
+
 ## 0.0.6
 
 Moved general utility out to https://github.com/erica/Swift-General-Utility and created a dependency to that package
