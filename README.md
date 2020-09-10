@@ -21,7 +21,7 @@ A wrapper to convert an `UnsafeMutablePointer<FILE>` to a `TextOutputStream`
 PROJECT > Swift Packages > Install:
 
 ```
-https://github.com/erica/https://github.com/erica/Swift-Cmdline-Utility
+https://github.com/erica/Swift-Cmdline-Utility
 ```
 
 SwiftPM:
