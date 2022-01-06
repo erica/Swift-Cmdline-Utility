@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.8
+Input for piping from stdin
+Update README for Xcode update
+
 ## 0.0.7
 Moved transformative examples out of code to examples folder
 Added dependency for Swift-Mac-Utility/MacUtility
