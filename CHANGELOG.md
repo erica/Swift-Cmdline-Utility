@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.0.9
+Updated for Swift-General-Utility/Misc-Utility refactor
+
 ## 0.0.8
 Input for piping from stdin
 Update README for Xcode update

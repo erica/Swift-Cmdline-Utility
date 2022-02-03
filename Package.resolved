@@ -2,21 +2,30 @@
   "object": {
     "pins": [
       {
-        "package": "GeneralUtility",
+        "package": "Swift-General-Utility",
         "repositoryURL": "https://github.com/erica/Swift-General-Utility",
         "state": {
           "branch": null,
-          "revision": "d4cd4ec6a89e7ddcdee79053acfbf95bc7730994",
-          "version": "0.0.3"
+          "revision": "90100fff38dea3e9f5eb25a3abb837ccca0120c8",
+          "version": "0.0.8"
         }
       },
       {
-        "package": "MacUtility",
+        "package": "Swift-Mac-Utility",
         "repositoryURL": "https://github.com/erica/Swift-Mac-Utility",
         "state": {
           "branch": null,
-          "revision": "1509b2a5f9f6bf0a8804dad1f8be4a018d757591",
-          "version": "0.0.1"
+          "revision": "7562f3cfee10e7494a1c50f5e5624edb05ac2634",
+          "version": "0.0.5"
+        }
+      },
+      {
+        "package": "SwiftMiscUtility",
+        "repositoryURL": "https://github.com/erica/Swift-Misc-Utility",
+        "state": {
+          "branch": null,
+          "revision": "6b9e52306d2ce932a840a266eca396112199178a",
+          "version": "0.0.0"
         }
       }
     ]

@@ -14,8 +14,8 @@ let package = Package(
             targets: ["CmdlineUtility"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/erica/Swift-General-Utility", from: "0.0.3"),
-        .package(url: "https://github.com/erica/Swift-Mac-Utility", from: "0.0.1"),
+        .package(url: "https://github.com/erica/Swift-General-Utility", from: "0.0.8"),
+        .package(url: "https://github.com/erica/Swift-Mac-Utility", from: "0.0.5"),
     ],
     targets: [
         .target(
